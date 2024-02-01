@@ -32,5 +32,9 @@
             }
         }
     ],
+    "externalDocs": {
+        "description": "Youtube Programmer Zaman Now",
+        "url": "https://www.Youtube.com/c/ProgrammerZamanNow"
+    },
     "paths": {}
   }
