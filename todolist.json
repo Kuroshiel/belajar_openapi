@@ -46,13 +46,24 @@
                         "name": "Include_done",
                         "in": "query",
                         "required": false,
-                        "description": "Is include done todolist"
+                        "description": "Is include done todolist",
+                        "schema" :{
+                            "type": "boolean",
+                            "nullable": true,
+                            "default" :false
+                        }
                     },
                     {
                         "name": "name",
                         "in": "query",
                         "required": false,
-                        "description": "Filter todolist by name"
+                        "description": "Filter todolist by name",
+                        "schema":{
+                            "type": "string",
+                            "nullable": true,
+                            "minLength": 1,
+                            "maxLength": 100
+                        }
                     }
                 ],
                 "responses": {
@@ -77,9 +88,16 @@
                         "name": "todolistId",
                         "in": "path",
                         "required": true,
-                        "description": "Todolist Id for Updated"
+                        "description": "Todolist Id for Updated",
+                        "schema":{
+                            "type": "string",
+                            "minLength": 1,
+                            "maxLength": 100
+                        }
                     }
+                    
                 ],
+                
                 "responses": {
 
                 }
@@ -92,9 +110,15 @@
                         "name": "todolistId",
                         "in": "path",
                         "required": true,
-                        "description": "Todolist Id for Deleted"    
+                        "description": "Todolist Id for Deleted",
+                        "schema":{
+                            "type": "string",
+                            "minLength": 1,
+                            "maxLength": 100
+                        }    
                     }
                 ],
+                
                 "responses": {
 
                 }
