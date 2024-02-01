@@ -36,5 +36,23 @@
         "description": "Youtube Programmer Zaman Now",
         "url": "https://www.Youtube.com/c/ProgrammerZamanNow"
     },
-    "paths": {}
+    "paths": {
+        "/todolist" :{
+            "get" :{
+
+            },
+            "post" :{
+
+            }
+
+        },
+        "/todolist/{todolistId}" :{
+            "put" :{
+                
+            },
+            "delete" :{
+
+            }
+        }
+    }
   }
